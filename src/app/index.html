@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Tabla ventas</title>
-</head>
-<body>
 
-<style>
+    <style>
 
-    table {
-        margin: 0 auto;  /* La tabla aparece centrada en la página*/
-        border-collapse: collapse; /* Evitar el espacio entre las celdas de la tabla*/
-        font-family: sans-serif; /* Especificar la fuente */
-    }
-    th {
-        border-bottom: solid 2px black; /* Añadir borde por debajo de los elementos de la cabecera */
-    }
-    td {
-        border-bottom: solid 1px black; /* Borde para el resto de celdas*/
-        padding: .2em 3em; /* Da hueco al borde de las celdas, el tamaño aumenta o disminuye proporcionalmente
+        table {
+            margin: 0 auto;  /* La tabla aparece centrada en la página*/
+            border-collapse: collapse; /* Evitar el espacio entre las celdas de la tabla*/
+            font-family: sans-serif; /* Especificar la fuente */
+        }
+        th {
+            border-bottom: solid 3px #460267; /* Añadir borde por debajo de los elementos de la cabecera */
+        }
+        td {
+            border-bottom: solid 1px #a53ae3; /* Borde para el resto de celdas*/
+            padding: .2em 3em; /* Da hueco al borde de las celdas, el tamaño aumenta o disminuye proporcionalmente
         con el tamaño de la letra
         Primer valor para arriba y abajo, y el segundo para izquierda y derecha*/
-    }
-    tbody tr:nth-child(even) { /* Dentro del cuerpo de la tabla los elementos tr hijos pares, tendran de fondo
+        }
+        tbody tr:nth-child(even) { /* Dentro del cuerpo de la tabla los elementos tr hijos pares, tendran de fondo
                                 un gris claro */
-        background-color: #eee;
-    }
+            background-color: #eee;
+        }
 
-</style>
+    </style>
+
+
+    <script src="datos/ventas.js"></script>
+
+</head>
+<body>
 
 <table>
     <thead>
@@ -39,313 +43,75 @@
     </tr>
     </thead>
     <tbody id="tablaVentas">
-
-    /*Generamos 50 filas con:    tr*50>td{Nombre Vendedor}+td{Nombre Cliente}+td{12-03-2021}+td{100€}
-    y pulsando la tecla tab*/
-
     <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
-    </tr>
-    <tr>
-        <td>Nombre Vendedor</td>
-        <td>Nombre Cliente</td>
-        <td>12-03-2021</td>
-        <td>100€</td>
+        <td colspan="4" style="text-aling: center" >No hay ventas</td>
     </tr>
 
+    <!-- tr = fila, td = celda    colspan (para que se extienda a lo largo de varias columnas)
+    Generamos 50 filas con:    tr*50>td{Nombre Vendedor}+td{Nombre Cliente}+td{12-03-2021}+td{100€}
+    y pulsando la tecla tab
+
+     Despues de adjuntar el archivo ventas.js hemos borrado las 50 filas generadas anteriormente para la maquetación -->
     </tbody>
 </table>
 
+    <!-- añadimos el script casi al final del body para que así primero haya generado la tabla-->
+<script>
+    var listaDeVentas = JSON.parse(ventas);
+    /* Parsea la cadena de texto y convertirlo en un aray de objetos, guardandolo en lista de ventas*/
+    var contenedor = document.getElementById('tablaVentas');
+
+    function rellenarTablaVentas(datos) {
+        contenedor.innerHTML="";
+        if (datos.length > 0) {
+
+            for (let i = 0; i < datos.length; i++) {
+                let venta = datos[i];
+                // Le pasamos la llamada, pasandole como parametro el objeto que parseo en cada momento
+                contenedor.appendChild(crearfilaVenta(venta))
+            }
+        }else{
+            contenedor.innerHTML = <tr>
+                <td colSpan="4" style="text-aling: center">No hay ventas</td>
+            </tr>
+        }
+    }
+
+    /* Referencia de donde tengo que poner los elementos (al body de la tabla)y hacemos referencia al objeto html de tbody id tabla ventas*/
+    rellenarTablaVentas(listaDeVentas);
+        /* Almacenamos el elemento que estamos recorriendo
+        * Variador += operador de asignación con incremento, lo que contiene el contenedor (1º vez vacio) esta
+        * cadena de texto. Delimitada con accento (template strings) podemos tener saltos de linea, en las demas no (lo interpretaria como ;)
+        * Y se le puede añadir codigo JS
+        * */
+     /*   contenedor.innerHTML += `<tr>
+            <td>${venta.vendedor.nombre + ' ' + venta.vendedor.apellidos}</td>
+            <td>${venta.cliente.nombre}</td>
+            <td>${venta.fecha}</td>
+            <td>${venta.importe + '€'}</td>
+            </tr>`;
+
+    }
+
+     Creamos función como parametro recibe un objeto venta y dentro, utilizaremos metodos porque el anterior es muy lento
+    Dentro para crear la fila (tr), con doc.creEl podemos crear un elemento indicandole como parametro la etiqueta que lo define
+
+
+     */
+    function crearfilaVenta(venta){
+        let fila = document.createElement ('tr');
+        let celdaVendedor = document.createElement('td');
+        celdaVendedor.textContent = venta.vendedor.nombre + ' ' + venta.vendedor.apellidos;
+        let celdaCliente = document.createElement('td');
+        celdaCliente.textContent = venta.cliente.nombre;
+        let celdaFecha = document.createElement('td');
+        celdaFecha.textContent = venta.fecha;
+        let celdaImporte = document.createElement('td');
+        celdaImporte.textContent = venta.importe + '€';
+        //Nos permite añadir como hijos los elementos que le pase, es importante el orden. hemos construido la fila
+        fila.append(celdaVendedor, celdaCliente, celdaFecha, celdaImporte);
+        return fila;
+    }
+</script>
 </body>
 </html>

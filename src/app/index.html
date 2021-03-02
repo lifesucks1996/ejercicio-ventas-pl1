@@ -1,10 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tabla ventas</title>
 </head>
 <body>
+
+<style>
+
+    table {
+        margin: 0 auto;  /* La tabla aparece centrada en la página*/
+        border-collapse: collapse; /* Evitar el espacio entre las celdas de la tabla*/
+        font-family: sans-serif; /* Especificar la fuente */
+    }
+    th {
+        border-bottom: solid 2px black; /* Añadir borde por debajo de los elementos de la cabecera */
+    }
+    td {
+        border-bottom: solid 1px black; /* Borde para el resto de celdas*/
+        padding: .2em 3em; /* Da hueco al borde de las celdas, el tamaño aumenta o disminuye proporcionalmente
+        con el tamaño de la letra
+        Primer valor para arriba y abajo, y el segundo para izquierda y derecha*/
+    }
+    tbody tr:nth-child(even) { /* Dentro del cuerpo de la tabla los elementos tr hijos pares, tendran de fondo
+                                un gris claro */
+        background-color: #eee;
+    }
+
+</style>
+
+<table>
+    <thead>
+    <tr>
+        <th>Vendedor</th>
+        <th>Cliente</th>
+        <th>Fecha</th>
+        <th>Importe</th>
+    </tr>
+    </thead>
+    <tbody id="tablaVentas">
+
+    /*Generamos 50 filas con:    tr*50>td{Nombre Vendedor}+td{Nombre Cliente}+td{12-03-2021}+td{100€}
+    y pulsando la tecla tab*/
+
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+    <tr>
+        <td>Nombre Vendedor</td>
+        <td>Nombre Cliente</td>
+        <td>12-03-2021</td>
+        <td>100€</td>
+    </tr>
+
+    </tbody>
+</table>
 
 </body>
 </html>
